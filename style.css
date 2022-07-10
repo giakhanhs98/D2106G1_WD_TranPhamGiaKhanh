@@ -1,0 +1,422 @@
+/* font  */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;1,300&family=Mea+Culpa&family=Monsieur+La+Doulaise&display=swap');
+/* text  */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    scroll-behavior: smooth;
+  }
+  body {
+
+    background-color: #e2dfd6;
+}
+/* navbar styling */
+nav{
+    background-color: #e2dfd6;
+    position:sticky;
+    /* width: 100%; */
+    /* padding: 10px 50px; */
+    z-index: 998;
+    transition: all 0.3s ease;
+    font-family: 'Cormorant Garamond', serif;
+  }
+  nav .logo {
+    color: #21222f;
+    font-size: 27px;
+    font-family: 'Mea Culpa', cursive;
+ }
+  nav .navbar{
+    position: relative;
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+  }
+  nav .navbar .menu{
+    display: flex;
+    justify-content: flex-end;
+    justify-items: center;
+    /* position: relative; */
+  }
+  nav .navbar .menu li{
+    list-style: none;
+    margin: 0 30px;
+    justify-content: center;
+    justify-items: flex-end;
+   
+  }
+  .navbar .menu a{
+    font-size: 18px;
+    font-weight: 500;
+    color:#21222f;
+    transition: all 0.5s 0.1s;
+  }
+  .navbar .menu a:hover{
+    opacity: 0.5;
+    /* font-size: 20px; */
+  }
+  
+
+/* section1  */
+main{
+    /* height: 100vh; */
+    justify-content: center;
+}
+.home{
+    /* background-color: aquamarine; */
+     height: 100vh;
+     text-align: center;
+     justify-content: center;
+     display: flex;
+     padding-top: 10%;
+ }
+ .home .blob {
+    /* position: relative; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    height: 70%;
+}
+.home .circle {
+    background: radial-gradient(circle, rgba(164,175,252,1) 0%, rgba(234,234,152,1) 100%);
+    border-radius: 50%;
+    width: 600px;
+    height: 600px;
+    filter: blur(20px);
+    display: inline-block;
+    margin: auto;
+}
+.home .content {
+    position: absolute;
+    /* display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center; */
+    /* top: 20%;
+    left: 9%; */
+}
+.home .content .space{
+  /* background-color: aquamarine; */
+  height: 50px;
+}
+.home .content h1 {
+  font-weight: 550;
+  color: #21222f;
+  letter-spacing: 0.5px;
+  font-size: 50px;
+  font-family: 'Cormorant Garamond', serif;
+}
+.home .content .giakhanhs {
+  /* position: relative; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.home .content span {
+  position: absolute;
+  font-weight: 550;
+  color: #21222f;
+  letter-spacing: 0.5px;
+  font-size: 40px;
+  font-family: 'Mea Culpa', cursive;
+  z-index: 998;
+}
+.home .content .ovel {
+  /* z-index: 1; */
+  position: absolute;
+  width: 220px;
+  height: 68px;
+  border: solid 0.5px  #21222f ;
+  border-radius: 60%;
+}
+.home .content p{
+  /* padding: 50px; */
+  font-weight: 550;
+  color: #21222f;
+  font-size: 25px;
+  letter-spacing: 1px;
+  font-family: 'Cormorant Garamond', serif;
+}
+
+/*about*/
+.About{
+  /* background-color: aquamarine; */
+    height: 100vh;
+    font-family: 'Cormorant Garamond', serif;
+    position: relative;
+}
+.About .content-1{
+    height: 40%;
+}
+.About .content-1 .despic{
+  padding-top: 3%;
+  display: flex;
+  align-items: flex-start;
+}
+.About .content-1 .title{
+    display: flex;
+    color: #21222f;
+    letter-spacing: 0.5px;
+    font-size: 25px;
+    font-family: 'Cormorant Garamond', serif;
+    justify-content: flex-end;
+    align-items: center;
+    padding-bottom: 3%;
+}
+.About .content-2{
+
+  height: auto; 
+  /* display: flex;
+  flex-wrap: wrap; */
+  justify-content: center;
+  align-items: center;
+}
+
+.About .content-2 .description{ 
+    padding-top: 2%;    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* text-align: center; */
+}
+.About .content-2 .description h2{
+    text-align:left ;
+    font-weight: 550;
+    color: #21222f;
+    letter-spacing: 0.5px;
+    font-size: 30px;
+    font-family: 'Cormorant Garamond', serif;
+}
+.About .content-2 .description p{
+    font-weight: 550;
+    text-align: center ;
+    color: #21222f;
+    letter-spacing: 0.5px;
+    font-size: 18px;
+    font-family: 'Cormorant Garamond', serif;
+}
+.About .content-img{
+  margin-top: 0;
+  background: url(/img/IMG_0475.png);
+  background-position: center ;
+  background-size: cover;
+
+  width: 100%;
+  height: 56%;
+  background-color: darkmagenta;
+}
+.About .imgClass{
+  padding-right: 2%;
+  margin-right: 2%;
+  display: flex;
+  margin: auto; 
+  z-index: 88;
+  width: 250px;
+  height: 350px;
+  background:url(/img/ava1.jpg);
+  background-position: center;
+  background-size: cover;
+ 
+  /* border: 1px solid #1c1c1c; */
+}
+
+
+/* project */
+.project{
+  /* background-color: aquamarine; */
+    padding-top: 3%;
+    height: 100vh;
+    font-family: 'Cormorant Garamond', serif;
+    position: relative;
+ 
+}
+.project .content{
+    width: 100%;
+    height: auto;
+}
+.project .content .title{
+    display: flex;
+    color: #21222f;
+    letter-spacing: 0.5px;
+    font-size: 25px;
+    font-family: 'Cormorant Garamond', serif;
+    justify-content: flex-start;
+    align-items: center;
+}  
+.project .content .description{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* overflow-x: auto; */
+    padding-top: 2%;
+    /* margin: 10px 80px 0 50px; */
+}
+.description::-webkit-scrollbar {
+    display: none;
+}
+.project .content .description .product-card-2 {
+    /* border: #1c1c1c solid 0.5px; */
+    background-image: url(img/minus1.jpg);
+    background-size: cover;
+    background-position: center;    position: relative;
+    height: 50vh;
+    overflow: hidden;
+}
+.project .content .description .product-card-1 {
+  /* border: #1c1c1c solid 0.5px; */
+  background-image: url(img/saigontam1y.jpg);
+  background-size: cover;
+  background-position: center;
+  height:50vh;
+  position: relative;
+  overflow: hidden;
+}
+.project .content .description .product-card-3 {
+  /* border: #1c1c1c solid 0.5px; */
+  background-image: url(img/haru1.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 50vh;
+  position: relative;
+  overflow: hidden;
+}
+.project .content .description .product-card-4 {
+  /* border: #1c1c1c solid 0.5px; */
+  background-image: url(img/donutkute1.jpg);
+  background-size: cover;
+  background-position: center;
+  height:50vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.project .content .description .space{
+  width: 0.5%;
+  height: 20%;
+}
+  
+   
+/* .product-thumb {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  } */
+.project .content .explore{
+  display: flex;
+  align-items: center;
+    justify-content: center;
+   text-align: center;
+    color: #21222f;
+    letter-spacing: 0.5px;
+    font-size: 25px;
+    font-family: 'Cormorant Garamond', serif;
+    padding-top: 8%;
+  }
+  .project .content .explore a{
+    color: #21222f;
+    letter-spacing: 0.5px;
+    font-size: 25px;
+    font-family: 'Cormorant Garamond', serif;
+    display: flex;
+    width: 150px;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border:0.5px solid #1c1c1c ;
+    border-radius: 20px;
+    transition: all 0.5s 0.1s;
+   }
+   .project .content .explore a:hover {
+    opacity: 0.5;
+   }
+  
+
+   .project .content .des_content{
+    justify-content: center;
+    text-align: center;
+    padding: 30px 0;
+   }
+   .project .content .des_content p{
+    width: 100%;
+   }
+   /* contact  */
+    .contact{
+     /* background-color: aquamarine; */
+     padding-top: 6%;
+     height: auto;
+     font-family: 'Cormorant Garamond', serif;
+     position: relative;
+     padding-bottom: 15%;
+  
+    }
+    .contact .content{
+      width: 100%;
+      height: auto;
+    }
+    .contact .content .title{
+      font-weight: 550;
+      display: flex;
+      color: #21222f;
+      letter-spacing: 0.5px;
+      font-size: 25px;
+      font-family: 'Cormorant Garamond', serif;
+      justify-content: flex-end;
+      align-items: center;
+      padding-bottom: 5%;
+    }
+    
+    .contact .content-2{
+
+      height: auto; 
+      /* justify-content: center;
+      align-items: center; */
+    }
+    
+    .contact .content-2 .description{ 
+        padding-top: 2%;    display: flex;
+        justify-content: space-around;
+        /* align-items: center; */
+        /* text-align: center; */
+    }
+    .contact .content-2 .description h2{
+        text-align:left ;
+        font-weight: 550;
+        color: #21222f;
+        letter-spacing: 0.5px;
+        font-size: 30px;
+        font-family: 'Cormorant Garamond', serif;
+    }
+    .contact .content-2 .description p{
+        font-weight: 550;
+        text-align: center ;
+        color: #21222f;
+        letter-spacing: 0.5px;
+        font-size: 18px;
+        font-family: 'Cormorant Garamond', serif; }
+    
+    .contact .content-2 .description a {
+      color:#21222f;
+    transition: all 0.4s ease;
+        }
+        /* transition: all 0.5s 0.1s;
+      } */
+      .contact .content-2 .description a:hover {
+       opacity: 0.5;
+      }
+     
+  .copyright {
+    height: 100px;
+    background-color: #21222f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .copyright p {
+  color: #e2dfd6;
+    letter-spacing: 0.5px;
+    font-size: 18px;
+    font-family: 'Cormorant Garamond', serif;
+    text-align: center;
+    }
